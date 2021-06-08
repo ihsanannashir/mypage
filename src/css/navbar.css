@@ -1,0 +1,31 @@
+.navbar {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #282828;
+    background-color: white;
+    padding: 45px 180px;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    float: right;
+    display: inline;
+}
+
+.navbar #home {
+    float: left;
+}
+
+.navbar #pj {
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.navbar #home:link,
+.navbar #home:visited,
+.navbar #pj:link,
+.navbar #pj:visited {
+    text-decoration: none;
+    color: #282828;
+}
