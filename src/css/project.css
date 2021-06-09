@@ -1,0 +1,19 @@
+.kotak {
+    border: solid 2px #282828;
+    border-radius: 5px;
+    display: inline-block;
+    height: auto;
+    width: 350px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.kotak img {
+    width: 350px;
+    height: 200px;
+}
+
+.kotak p {
+    text-align: justify;
+    text-justify:distribute-all-lines;
+}
