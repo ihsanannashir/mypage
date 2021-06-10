@@ -11,8 +11,8 @@ class Navbar extends Component {
                 <a href="#project" id="pj">Project</a>
                 <a href="#design" id="pj">Design</a>
                 </div>
-            </div>    
-        )
+            </div> 
+        );
     }
 }
 
