@@ -12,7 +12,7 @@ class Landing extends React.Component {
                     <a href="http://linkedin.com/in/ihsanannashir"><FontAwesomeIcon className='lkn' icon={faLinkedin} size="3x"/></a>
                     <a href="http://github.com/ihsanannashir"><FontAwesomeIcon className='gh' icon={faGithub} size="3x" /></a>
                     <a href="http://instagram.com/ihsanannashir"><FontAwesomeIcon className='ig' icon={faInstagram} size="3x"/></a>
-                    <div className="cv">CV</div>
+                    <a href="https://drive.google.com/file/d/13dkgh1cRrokw0OHaGl3RSaUIpMntjM8u/view" id="cv"><div className="cv">CV</div></a>
                 </div>
             </div>
     }
