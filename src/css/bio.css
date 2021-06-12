@@ -20,11 +20,23 @@
 
 .lkn, .gh, .ig {
     margin: 0px 30px;
+    text-decoration: none;
+    color: #282828;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
 }
 
-.lkn:hover, gh:hover {
-
+.lkn:hover, .gh:hover, .ig:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
 }
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+  }
 
 .cv {
     text-align: center;
@@ -34,4 +46,10 @@
     margin: 0px 30px;
     font-size: 30px;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+.cv:hover {
+    color: white;
+    background-color: #282828;
 }
