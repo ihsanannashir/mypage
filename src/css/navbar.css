@@ -10,7 +10,7 @@
 
 .content {
     float: right;
-    display: inline;
+    display: flex;
 }
 
 .navbar #home {
@@ -28,4 +28,21 @@
 .navbar #pj:visited {
     text-decoration: none;
     color: #282828;
+}
+
+.navbar .cont {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+.navbar .cont:hover {
+    animation-name: swipe;
+    animation-timing-function: ease;
+}
+
+@keyframes swipe {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
 }

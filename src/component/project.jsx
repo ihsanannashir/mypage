@@ -2,7 +2,6 @@ import React from 'react';
 import Template from './pj-temp';
 import '../css/project.css';
 
-//ini class component
 class Project extends React.Component {
     render() {
         return <div id="project">
