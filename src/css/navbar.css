@@ -33,6 +33,19 @@
     animation-timing-function: ease;
 }
 
+
+.switch-wrapper {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.switch-wrapper > div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 @keyframes swipe {
     0%   { transform: translateX(0); }
     50%  { transform: translateX(-10px); }

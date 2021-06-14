@@ -1,3 +1,18 @@
+.project {
+    margin-top: 50px;
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase Template {
+    flex: 1 1 30%;
+}
+
 .kotak {
     border: solid 2px #282828;
     border-radius: 5px;

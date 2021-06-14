@@ -1,11 +1,7 @@
 import React from "react";
 import '../css/navbar.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import { AnimatedSwitch } from 'react-router-transition';
 import Project from "./project";
 import Landing from './landing';
 import Design from './design';
@@ -24,19 +20,22 @@ export default function Navbar() {
             </div>
         </div>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/project">
+        <AnimatedSwitch
+          atEnter={{ opacity: 0 }}
+          atLeave={{ opacity: 0 }}
+          atActive={{ opacity: 1 }}
+          className="switch-wrapper"
+        >
+          <Route exact path="/project">
             <Project />
           </Route>
-          <Route path="/design">
+          <Route exact path="/design">
             <Design />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Landing />
           </Route>
-        </Switch>
+        </AnimatedSwitch>
       </div>
     </Router>
   );
