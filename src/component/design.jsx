@@ -1,10 +1,11 @@
 import React from 'react';
+import Title from './title';
 
 class Design extends React.Component {
     render() {
         return <div id="design">
-            <h1>Ini design</h1>
-            </div>
+            <Title/>
+        </div>
     }
 }
 

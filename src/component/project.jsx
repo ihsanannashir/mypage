@@ -1,11 +1,12 @@
 import React from 'react';
 import Template from './pj-temp';
 import '../css/project.css';
+import Title from './title';
 
 class Project extends React.Component {
     render() {
         return <div className="project">
-                <h1>Project</h1>
+                <Title judul="Project" ket="Project that i made."/>
                 <div className="showcase">
                     <Template
                         pict="http://placeimg.com/250/200/arch"
@@ -18,18 +19,23 @@ class Project extends React.Component {
                         keterangan="pokoknya ini isinya keterangan project hahay sdkfh weyuif uigfisug eruigy eruig iugt"
                     />
                     <Template
-                        pict="http://placeimg.com/250/200/people/sepia"
+                        pict="http://placeimg.com/250/200/people"
                         judul="Project 3"
                         keterangan="pokoknya ini isinya keterangan project hahay sdkfh weyuif uigfisug eruigy eruig iugt"
                     />
                     <Template
-                        pict="http://placeimg.com/250/200/people/sepia"
-                        judul="Project 3"
+                        pict="http://placeimg.com/250/200/tech"
+                        judul="Project 4"
                         keterangan="pokoknya ini isinya keterangan project hahay sdkfh weyuif uigfisug eruigy eruig iugt"
                     />
                     <Template
-                        pict="http://placeimg.com/250/200/people/sepia"
-                        judul="Project 3"
+                        pict="http://placeimg.com/250/200/animals"
+                        judul="Project 5"
+                        keterangan="pokoknya ini isinya keterangan project hahay sdkfh weyuif uigfisug eruigy eruig iugt"
+                    />
+                    <Template
+                        pict="http://placeimg.com/250/200/animals"
+                        judul="Project 5"
                         keterangan="pokoknya ini isinya keterangan project hahay sdkfh weyuif uigfisug eruigy eruig iugt"
                     />
                 </div>

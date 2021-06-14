@@ -1,26 +1,20 @@
-.project {
-    margin-top: 50px;
-}
+/* Desktop */
 
 .showcase {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    
+    align-items: flex-start;
     justify-content: center;
-}
-
-.showcase Template {
-    flex: 1 1 30%;
 }
 
 .kotak {
     border: solid 2px #282828;
     border-radius: 5px;
-    display: inline-block;
+    display: inline;
     height: auto;
     width: 350px;
     margin: 15px;
-    padding: 15px;
+    
 }
 
 .kotak img {
@@ -30,5 +24,31 @@
 
 .kotak p {
     text-align: justify;
-    text-justify:distribute-all-lines;
+    text-justify: distribute-all-lines;
+    padding: 10px;
+}
+
+/* Mobile */
+@media (max-width:767px) {
+    .kotak img {
+        width: 450px;
+        height: 250px;
+    }
+
+    .kotak {
+        border: solid 2px #282828;
+        border-radius: 5px;
+        display: inline-block;
+        height: auto;
+        width: 450px;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
 }
