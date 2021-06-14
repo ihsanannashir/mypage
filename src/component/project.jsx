@@ -33,11 +33,6 @@ class Project extends React.Component {
                         judul="Project 5"
                         keterangan="pokoknya ini isinya keterangan project hahay sdkfh weyuif uigfisug eruigy eruig iugt"
                     />
-                    <Template
-                        pict="http://placeimg.com/250/200/animals"
-                        judul="Project 5"
-                        keterangan="pokoknya ini isinya keterangan project hahay sdkfh weyuif uigfisug eruigy eruig iugt"
-                    />
                 </div>
             </div>
     }

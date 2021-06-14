@@ -6,6 +6,12 @@ import Project from "./project";
 import Landing from './landing';
 import Design from './design';
 
+const Subhead = (props) => {
+  return <div>
+      <div className="cont" id="pj"><Link to={props.url} style={{ textDecoration: 'none', color: '#282828'  }}>{props.nama}</Link></div>
+  </div>
+}
+
 export default function Navbar() {
   return (
     <Router>
@@ -13,10 +19,10 @@ export default function Navbar() {
         <div className="navbar">
             <div className="cont" id="home">
               <Link to="/" style={{ textDecoration: 'none', color: '#282828' }}>Ihsan An-Nashir's Portfolio</Link>
-                </div>
+            </div>
             <div className="content">
-                <div className="cont" id="pj"><Link to="/project" style={{ textDecoration: 'none', color: '#282828'  }}>Project</Link></div>
-                <div className="cont" id="pj"><Link to="/design" style={{ textDecoration: 'none', color: '#282828'  }}>Design</Link></div>
+                <Subhead url="/project" nama="Project"/>
+                <Subhead url="/design" nama="Design"/>
             </div>
         </div>
 

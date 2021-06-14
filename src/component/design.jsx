@@ -4,7 +4,7 @@ import Title from './title';
 class Design extends React.Component {
     render() {
         return <div id="design">
-            <Title/>
+            <Title judul="Design" ket="design that i made."/>
         </div>
     }
 }
