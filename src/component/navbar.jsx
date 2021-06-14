@@ -1,19 +1,43 @@
-import React, { Component } from 'react';
+import React from "react";
 import '../css/navbar.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Project from "./project";
+import Landing from './landing';
+import Design from './design';
 
-class Navbar extends Component {
-    render() {
-        return (
-            <div className="navbar">
-                <a href="#top" id="home"><div className="cont">Ihsan An-Nashir's Portfolio</div></a>
-
-                <div className="content">
-                    <a href="#project" id="pj"><div className="cont">Project</div></a>
-                    <a href="#design" id="pj"><div className="cont">Design</div></a>
+export default function Navbar() {
+  return (
+    <Router>
+      <div>
+        <div className="navbar">
+            <div className="cont" id="home">
+              <Link to="/" style={{ textDecoration: 'none', color: '#282828' }}>Ihsan An-Nashir's Portfolio</Link>
                 </div>
-            </div> 
-        );
-    }
-}
+            <div className="content">
+                <div className="cont" id="pj"><Link to="/project" style={{ textDecoration: 'none', color: '#282828'  }}>Project</Link></div>
+                <div className="cont" id="pj"><Link to="/design" style={{ textDecoration: 'none', color: '#282828'  }}>Design</Link></div>
+            </div>
+        </div>
 
-export default Navbar;
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/project">
+            <Project />
+          </Route>
+          <Route path="/design">
+            <Design />
+          </Route>
+          <Route path="/">
+            <Landing />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}

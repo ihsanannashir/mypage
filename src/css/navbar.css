@@ -22,14 +22,6 @@
     text-decoration: none;
 }
 
-.navbar #home:link,
-.navbar #home:visited,
-.navbar #pj:link,
-.navbar #pj:visited {
-    text-decoration: none;
-    color: #282828;
-}
-
 .navbar .cont {
     animation-duration: 1s;
     animation-iteration-count: infinite;
