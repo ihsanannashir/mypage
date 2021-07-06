@@ -17,12 +17,14 @@ export default function Navbar() {
     <Router>
       <div>
         <div className="navbar">
-            <div className="cont" id="home">
-              <Link to="/" style={{ textDecoration: 'none', color: '#282828' }}>Ihsan An-Nashir's Portfolio</Link>
+            <div id="home">
+              {/*<Link to="/" style={{ textDecoration: 'none', color: '#282828' }}>Ihsan An-Nashir's Portfolio</Link>*/}
+              Ihsan An-Nashir's Portfolio
             </div>
             <div className="content">
+              <Subhead url="/" nama="Home"/>
                 <Subhead url="/project" nama="Project"/>
-                <Subhead url="/design" nama="Design"/>
+                {/*<Subhead url="/design" nama="Design"/>*/}
             </div>
         </div>
 
