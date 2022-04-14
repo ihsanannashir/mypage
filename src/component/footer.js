@@ -4,8 +4,8 @@ class Footer extends React.Component {
     render() {
       const footerStyle = {
         fontSize: '8px',
-        position: 'fixed',
-        bottom: 0,
+        position: 'bottom',
+        // bottom: 0,
         justifyContent: 'space-between',
         width: '100%',
         paddingBottom: '10px',

@@ -2,6 +2,7 @@ import React from 'react';
 import Template from './pj-temp';
 import '../css/project.css';
 import Title from './title';
+import Footer from './footer';
 
 class Project extends React.Component {
     render() {
@@ -58,6 +59,7 @@ class Project extends React.Component {
                         keterangan="pokoknya ini isinya keterangan project hahay sdkfh weyuif uigfisug eruigy eruig iugt"
                     />
                 </div>
+                <Footer/>
             </div>
     }
 }
